@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "HAPwave_bids",
-  "description": "This dataset contains intracranial EEG (iEEG) recordings from 8 patients undergoing single pulse electrical stimulation, collected to characterize electrical stimulation-driven network interactions within the human limbic system. The data support investigations into connectivity and evoked responses in the human brain and were formatted according to the BIDS standard.",
-  "methods_description": "Patients rested in a hospital bed while single pulse electrical stimulation was delivered intracranially. Stimulation pulses were biphasic, 200 microseconds in duration, and delivered at an amplitude of 6mA (reduced to 4mA for subject 7 to minimize interictal responses).",
+  "description": "Intracranial EEG (iEEG) recordings from 8 patients undergoing single pulse electrical stimulation while resting in a hospital bed. The dataset supports investigation of stimulation-driven network interactions in the human limbic system. Data are organized in BIDS with metadata for event timing.",
+  "methods_description": "Patients rested in the hospital bed while biphasic single pulse electrical stimulation (200 microsecond duration, 6 mA amplitude) was delivered. For subject 7, amplitude was sometimes reduced to 4 mA to minimize interictal responses.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -25,9 +25,7 @@
   },
   "keywords": [
     {
-      "term": "Electroencephalography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+      "term": "iEEG"
     },
     {
       "term": "intracranial EEG"
@@ -36,17 +34,17 @@
       "term": "single pulse electrical stimulation"
     },
     {
-      "term": "human connectome"
-    },
-    {
       "term": "Limbic System",
       "subject_scheme": "MeSH",
       "value_uri": "http://id.nlm.nih.gov/mesh/D008032"
     },
     {
-      "term": "Epilepsy",
+      "term": "Electric Stimulation",
       "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004558"
+    },
+    {
+      "term": "human connectome"
     }
   ],
   "related_identifiers": [
@@ -58,7 +56,7 @@
     {
       "identifier": "10.1523/JNEUROSCI.2201-22.2023",
       "identifier_type": "DOI",
-      "relation_type": "IsSupplementTo"
+      "relation_type": "IsDescribedBy"
     },
     {
       "identifier": "10.18112/openneuro.ds004696.v1.0.1",
@@ -79,9 +77,12 @@
       "funder_name": "The DERIVE Office and the Mayo Clinic Center for Biomedical Discovery"
     },
     {
-      "funder_name": "National Institute of Mental Health",
+      "funder_name": "National Institute of Mental Health, National Institutes of Health",
       "award_number": "R01 MH122258",
       "award_title": "CRCNS: Processing speed in the human connectome across the lifespan"
+    },
+    {
+      "funder_name": "Mayo Clinic Center for Biomedical Discovery (DERIVE Office)"
     }
   ],
   "resource_type_general": "Dataset",
@@ -90,7 +91,7 @@
     "ieeg"
   ],
   "sizes": [
-    "20.9 GB (5170 files)"
+    "19.46 GB (5170 files)"
   ],
   "formats": [
     ".gii",
